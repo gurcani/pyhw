@@ -1,0 +1,2 @@
+include src/fhwak/*.c src/fhwak/*.h src/fhwak/Makefile
+exclude src/fhwak/*.so

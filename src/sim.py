@@ -43,7 +43,6 @@ def f_phik0(kx,ky):
 
 def fhwak_python(t,y):
     global kx,ky,ksqr,linmat,dat,fftw_obj_dat6b,fftw_obj_dat2f,N,Npad
-    print('using pure python')
     phik,nk=y.view(dtype=complex).reshape(2,Nx,int(Ny/2+1))
     dphikdt=linmat[:,:,0,0]*phik+linmat[:,:,0,1]*nk
     dnkdt=linmat[:,:,1,0]*nk+linmat[:,:,1,1]*phik
